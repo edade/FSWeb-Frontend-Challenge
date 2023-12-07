@@ -1,10 +1,11 @@
-import proje1 from "../img/profile.jpeg"
-import proje2 from "../img/profile.jpeg"
+import filmler from "../img/filmler.png";
+import pizza from  "../img/pizza.png";
+
 
 export const ProjectsData = [
     {
       id: 1,
-      image: proje1,
+      image: filmler,
       projectHeader: "Filmler Listesi ",
       introduction:
         "This project provides showing the list of movies and give opportunity to add a favorite movies list",
@@ -15,7 +16,7 @@ export const ProjectsData = [
     },
     {
       id: 2,
-      image: proje2,
+      image: pizza,
       projectHeader: "Pizza Order",
       introduction:
         "This website basically allows to order Pizza by selecting ingridients/size of the Pizza and calculate the price  ",
