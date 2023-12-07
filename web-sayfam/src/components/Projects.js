@@ -1,10 +1,11 @@
 
 import React from "react";
-import { ProjectsData } from "../data/ProjectsData"; 
+
 import { useSelector } from "react-redux";
 
 const ProjectCards = () => {
   const darkMode = useSelector(state=> state.darkMode)
+  const ProjectsData = useSelector(state => state.ProjectsData)
   return (
     <div className={`flex flex-col p-[1rem] justify-center items-center ${darkMode ? "bg-[#484148] text-white" : " " }`}>
       <div className="text-[3rem] font-['Inter'] leading-[4.357rem] font-[500] pt-[2rem] pb-[2rem]">
@@ -29,7 +30,7 @@ const ProjectCards = () => {
                   {project.techStack.map((tech, index) => (
                     <span
                       key={index}
-                      className={` inline-block font-['Playfair_Display'] font-[700] text-[1rem] leading-[1.6rem] rounded-[7.6rem] px-2 py-1 m-1  ${ darkMode ? "bg-[#525252]" : "bg-[#DDEEFE]" } `}
+                      className={` inline-block font-['Playfair_Display'] font-[700] text-[1rem] leading-[1.6rem] rounded-[7.6rem] px-2 py-1 m-1  ${ darkMode ? "bg-[#525252]" : "bg-[white]" } `}
                     >
                       {tech}
                     </span>
