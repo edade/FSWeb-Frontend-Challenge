@@ -1,10 +1,9 @@
 import { useSelector } from "react-redux";
-import profile from "../img/profile.jpeg";
-
 
 export default function Header() {
 
   const darkMode = useSelector(state=> state.darkMode)
+  const headerData = useSelector(state => state.headerData)
   return (
     <div className={`flex flex-col-reverse px-[2rem] mx-auto gap-10 lg:flex-row lg:pt-[3.5rem] lg:justify-evenly lg:pl-[10rem] lg:pr-[10rem] pb-[2rem] lg:pb-[9.4rem] ${
       darkMode ? "bg-[#2A262B] text-[white]" : "bg-[#F4F4F4]"
@@ -15,7 +14,7 @@ export default function Header() {
         </p>
 
         <p className=" font-['Inter'] lg:tracking-[.01em] font-[500] text-[2rem] lg:text-[3rem] lg:leading-[4rem]  ">
-          I’m Eda. I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet!
+          I’m {headerData[0].name} I’m a {headerData[0].role}. I can craft solid and scalable frontend products. Let’s meet!
           <div className="flex gap-[2rem] lg:mt-[0rem] mt-[2rem]">
             <a
               target="_blank"
@@ -51,7 +50,7 @@ export default function Header() {
                 target="_blank"
                 href="mailto:edakalaycioglu@gmail.com"
               >
-                edakalaycioglu@gmail.com
+                {headerData[0].mail}
               </a>
             </span>
           </p>
@@ -60,7 +59,7 @@ export default function Header() {
       <div className="flex lg:h-[39%] lg:w-[40vw]  pl-[5.6rem] pr-[-1.4rem] lg:justify-end py-[5rem] h-[15rem] justify-center">
         <img
           className=" rounded-[2.2rem]  w-[17rem] h-[15rem] lg:w-[40rem] lg:h-[25rem]   shadow-[-1.5rem_-1.5rem_0rem_rgba(238,17,98,0.90)]"
-          src={profile}
+          src={headerData[0].image}
           alt="Image"
         />
       </div>
