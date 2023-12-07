@@ -7,7 +7,7 @@ const ThemeSwitch = () => {
   const darkMode = useSelector((state) => state.darkMode);
 
   return (
-    <div className={`flex items-center justify-end space-x-4 bg-[#F4F4F4] pt-10 ${darkMode ? "bg-[#2A262B]" : "" }`}>
+    <div className={`flex items-center justify-end space-x-4  pt-10 ${darkMode ? "bg-[#2A262B]" : "bg-[#F4F4F4]" }`}>
       <div className="relative">
    
         <label className="flex items-center cursor-pointer relative">

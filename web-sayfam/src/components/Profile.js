@@ -15,7 +15,7 @@ export default function Profile() {
         </p>
 
         <div className="flex pt-[3rem]  lg:flex-row  flex-col ">
-          <div className={`flex  w-[50%] h-[25rem] flex-col pt-[2rem] lg:pt-[2rem] pl-[1rem] lg:pl-[3rem] lg:pr-[3rem] lg:ml-[5rem] lg:bg-white rounded-[1.2rem] lg:shadow-[9px_9px_0px_rgba(82,82,82,0.5)] ${darkMode ? "lg:bg-[#525252]" : ""}`}>
+          <div className={`flex  w-[50%] h-[25rem] flex-col pt-[2rem] lg:pt-[2rem] pl-[1rem] lg:pl-[3rem] lg:pr-[3rem] lg:ml-[5rem] rounded-[1.2rem] lg:shadow-[9px_9px_0px_rgba(82,82,82,0.5)] ${darkMode ? "lg:bg-[#525252]" : " lg:bg-white"}`}>
             <p className="font-['Playfair_Display']  text-left  font-[400] text-[#d9333b] lg:text-[#EA2678] leading-[3.2rem] text-[24px] ">
               Basic Information
             </p>

@@ -15,7 +15,7 @@ const ProjectCards = () => {
         {ProjectsData.map((project, index) => (
           <div
             key={project.id}
-            className={`max-w-[22rem] flex-shrink rounded overflow-hidden shadow-md bg-[#DDEEFE]  ${ darkMode ? (index % 2 === 0 ? "bg-[#2D3235]" : "bg-[#495351]") : "bg-[#DDEEFE]" }`}
+            className={`max-w-[22rem] flex-shrink rounded overflow-hidden shadow-md   ${ darkMode ? (index % 2 === 0 ? "bg-[#2D3235]" : "bg-[#495351]") : "bg-[#DDEEFE]" }`}
           >
             <div className="p-4 text-left">
               <h2 className="font-['Playfair_Display'] font-bold text-[1.5rem] mb-2">
@@ -29,7 +29,7 @@ const ProjectCards = () => {
                   {project.techStack.map((tech, index) => (
                     <span
                       key={index}
-                      className={` bg-white inline-block font-['Playfair_Display'] font-[700] text-[1rem] leading-[1.6rem] rounded-[7.6rem] px-2 py-1 m-1  ${ darkMode ? "bg-[#525252]" : "bg-[#DDEEFE]" } `}
+                      className={` inline-block font-['Playfair_Display'] font-[700] text-[1rem] leading-[1.6rem] rounded-[7.6rem] px-2 py-1 m-1  ${ darkMode ? "bg-[#525252]" : "bg-[#DDEEFE]" } `}
                     >
                       {tech}
                     </span>
